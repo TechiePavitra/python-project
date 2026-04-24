@@ -5,34 +5,34 @@
 # Write three versions of this program, making sure each message is printed for the appropriate color alien.
 
 # First Version
-alien_color = 'green'
-if alien_color == 'green':
+alien_color = "green"
+if alien_color == "green":
     points = 5
-elif alien_color == 'yellow':
+elif alien_color == "yellow":
     points = 10
-elif alien_color == 'red':
+elif alien_color == "red":
     points = 15
 
 print(f"The player just earned {points} points.")
 
 # Second Version
-alien_color = 'yellow'
-if alien_color == 'green':
+alien_color = "yellow"
+if alien_color == "green":
     points = 5
-elif alien_color == 'yellow':
+elif alien_color == "yellow":
     points = 10
-elif alien_color == 'red':
+elif alien_color == "red":
     points = 15
 
 print(f"The player just earned {points} points.")
 
 # Third Version
-alien_color = 'red'
-if alien_color == 'green':
+alien_color = "red"
+if alien_color == "green":
     points = 5
-elif alien_color == 'yellow':
+elif alien_color == "yellow":
     points = 10
-elif alien_color == 'red':
+elif alien_color == "red":
     points = 15
 
 print(f"The player just earned {points} points.")

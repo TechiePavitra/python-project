@@ -4,16 +4,16 @@
 # Write one version of this program that runs the if block and another that runs the else block
 
 # First Version
-alien_color = 'green'
-if alien_color == 'green':
+alien_color = "green"
+if alien_color == "green":
     points = 5
 else:
     points = 10
 print(f"The player just earned {points} points.")
 
 # Second Version
-alien_color = 'red'
-if alien_color == 'green':
+alien_color = "red"
+if alien_color == "green":
     points = 5
 else:
     points = 10
