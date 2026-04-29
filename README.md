@@ -4,10 +4,11 @@ My personal Python learning repo. I started this because I wanted a place to kee
 I'm learning Python from scratch, mostly following **Python Crash Course 3rd Edition** and also just experimenting on my own. Every time I learn something new, I add a file here with examples and comments so I can come back and look it up later without googling everything again.
 This is just for me  not a tutorial, not a course, just my own notes in my own style.
 
-### Which things i'm using to learn Python?
+### Which things i'm using to learn Programming?
 
 - Python Crash Course 3rd Edition: A Hands-on, Project-based Introduction to Programming by Eric Matthes - Main Material
 - Fluent Python 2nd Edition: Clear, Concise, and Effective Programming by Luciano Ramalho - Second Material
+- The Pragmatic Programmer: from Journeyman to Master by Andy Hunt and Dave Thomas for Knowledge of Programming
 - Microsoft Visual Code for Editing code, this is my main IDE
 - Git & Github for this repo
 - Jupyter Notebooks for Self Explaination

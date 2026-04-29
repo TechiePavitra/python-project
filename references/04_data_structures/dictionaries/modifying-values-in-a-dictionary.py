@@ -17,7 +17,7 @@ print(f"the alien color is now {alien_0["color"]}")
 alien_1 = {
     "x_position": 0,
     "y_position": 25,
-    "speed": "medium" 
+    "speed": "medium",
 }
 alien_1["speed"] = "fast"
 
