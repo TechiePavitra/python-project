@@ -32,4 +32,5 @@ for name, city in sorted(database.items()):
     else:
         print(city.title())
         
- 
+# note that .sort() method only applies for the lists, while .sorted applies for any iterable (repeated things)
+
