@@ -35,6 +35,12 @@ This is just for me  not a tutorial, not a course, just my own notes in my own s
 - **zzzcode.ai** for understanding code
 - **Beginning Git and GitHub:** A Comprehensive Guide to Version Mariot Tsitoara
 
+### Why I'm learning Programming
+I’m a gamer, and one game that really inspired me was **Minecraft**. I used to wonder how Minecraft could generate huge worlds from just a random seed. That curiosity pushed me to dig deeper into algorithms and how programming works behind the scenes.
+At first, I started learning programming just because I was curious. But over time, it became something much bigger. Now it feels like a real passion. I genuinely enjoy building things and understanding how systems work.
+I also like automating stuff because I’m honestly too lazy to repeat boring daily tasks manually. Programming lets me create solutions that save time and make life easier, and that’s one of the most satisfying parts for me.
+After learning more, I became interested in **AI, Machine Learning, and TensorFlow**. My current goal is to become an **AI Engineer**. I want to understand everything deeply and build things from the ground up, step by step, block by block.
+
 ### Why i've Created this Repo?
 Since last year i've lost soo many great programs and codes that was stored in my old computer, unfortunately the hard disk got corrupted and i wouldn't recover it
 
