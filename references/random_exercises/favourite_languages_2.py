@@ -34,3 +34,27 @@ for name, languages in favourite_languages.items():
     
     for language in languages:
         print(f"\t{language.title()}")
+        
+# plural fix with if else condition and len function
+favourite_languages = {
+    "jen": ["python", "rust"],
+    "sarah": ["c"],
+    "edward": ["rust", "go"],
+    "phil": ["python", "haskell"],
+}
+
+for name, languages in favourite_languages.items():
+    if len(languages) > 1:
+        print(f"{name.title()}'s favourite languages are listed below:")
+        
+        for language in languages:
+            print(language.title())
+        # blank line
+        print()
+    
+    else:
+        print(f"{name.title()}'s favourite language is {languages[0].title()}")
+        # blank line
+        print()
+
+        
