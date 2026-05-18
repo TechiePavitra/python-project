@@ -15,8 +15,10 @@ ending_range = int(input("Enter Your Ending Range:  "))
 # random number
 random_number = random.randint(starting_range, ending_range)
 
+active = True
+
 # loop
-while True:
+while active:
     number = int(input("Enter your Number:  "))
     if number < random_number:
         print("Higher")
@@ -24,5 +26,5 @@ while True:
         print("Lower")
     else: 
         print("You won the Game!")
-        exit()
+        active = False
     
