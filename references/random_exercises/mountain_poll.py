@@ -16,5 +16,7 @@ while polling_active:
     if repeat.lower() == 'no':
         polling_active = False
 
-# check if the key and value is added to dictionary or not
-print(responses)
+# Poll Results
+print(f"\n---Poll Results---")
+for name, response in responses.items():
+    print(f"{name} would like to climb {response}.")
