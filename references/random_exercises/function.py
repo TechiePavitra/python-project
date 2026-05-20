@@ -10,9 +10,9 @@ greet_user()
 # python use this for documentation
 
 # if you slightly modify the function.
-# it greet user by name
-def greet_user2(name):
+# it greet user by their username
+def greet_user2(username):
     """Display a simple greeting."""
-    print(f"Hello {name}!")
+    print(f"Hello {username}!")
     
 greet_user2("John")
