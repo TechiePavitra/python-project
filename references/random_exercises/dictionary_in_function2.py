@@ -9,4 +9,19 @@ def build_person(first_name, last_name, age=None):
         person['age'] = age
     return person
 
-build_person("pavitra", "patil", 52)
+build_person("pavitra", "patil", 18)
+
+# Falsy:
+# False
+# None
+# 0
+# ''      # empty string
+# []      # empty list
+# {}      # empty 
+
+# Truthy:
+# True
+# Number other than 0
+# 'Non Empty String'
+# ['Non Empty String']
+# {"name": "john"} non empty dictionary
