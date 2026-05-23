@@ -5,7 +5,7 @@ even_numbers = []
 odd_numbers = []
 
 num = 1 
-limit = 100 # change this variable to manuplate this program.
+limit = 100 # change this variable to manipulate this program.
 
 while num <= limit:
     if num % 2 == 0:
