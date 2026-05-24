@@ -1,11 +1,11 @@
-print("  _______  __   __  _______  _______  __   __  _______")
-print(" |       ||  | |  ||       ||   _   ||  |_|  ||       |")
-print(" |    _  ||  |_|  ||    ___||  |_|  ||       ||    ___|")
-print(" |   |_| ||       ||   | __ |       ||       ||   |___ ")
-print(" |    ___||_     _||   ||  ||       ||       ||    ___|")
-print(" |   |      |   |  |   |_| ||   _   || ||_|| ||   |___ ")
-print(" |___|      |___|  |_______||__| |__||_|   |_||_______| ")
-print("            Guess the number challenge game              \n")
+print("  _______  _______  __   __  _______")
+print(" |       ||   _   ||  |_|  ||       |")
+print(" |    ___||  |_|  ||       ||    ___|")
+print(" |   | __ |       ||       ||   |___ ")
+print(" |   ||  ||       ||       ||    ___|")
+print(" |   |_| ||   _   || ||_|| ||   |___ ")
+print(" |_______||__| |__||_|   |_||_______|")
+print("     Guess the number challenge game              \n")
 
 import random 
 
@@ -15,16 +15,23 @@ ending_range = int(input("Enter Your Ending Range:  "))
 # random number
 random_number = random.randint(starting_range, ending_range)
 
-active = True
+# Attempts
+attempts = 0 # current attempts 
+active = True # Used flag instead of break for easy understanding
 
 # loop
-while active:
-    number = int(input("Enter your Number:  "))
-    if number < random_number:
-        print("Higher")
-    elif number > random_number:
-        print("Lower")
-    else: 
-        print("You won the Game!")
-        active = False
+while (attempts < 11) and active:
+    number = int(input(f"\nEnter your Number:  "))
+    attempts += 1
     
+    if number != random_number:
+        if attempts == 10:
+            print(f"\nGame Over! The number was {random_number}")
+            active = False
+        else:
+            direction = "Higher" if number < random_number else "Lower"
+            print(f"\n{10 - attempts} chances left!")
+            print(f"{direction} than {number}")
+    else:
+        print(f"\nYou won in {attempts} attempt(s)!")
+        active = False
