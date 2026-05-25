@@ -15,6 +15,10 @@ def print_models(unprinted_designs, completed_models):
         current_design = unprinted_designs.pop()
         print(f"{current_design} has been printed...")
         completed_models.append(current_design)
+    # this first function is working like a factory,
+    # takes unprinted_designs list last item and move it to completed_models list,
+    # until unprinted_designs becomes empty.
+    
     
 def show_completed_models(completed_models):
     """Show all the models that were printed."""
@@ -29,4 +33,4 @@ unprinted_designs = ['phone case', 'robot pendant', 'dodecahedron']
 completed_models = []
 
 print_models(unprinted_designs, completed_models)
-show_completed_models(completed_models.title())
+show_completed_models(completed_models)
