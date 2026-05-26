@@ -48,7 +48,7 @@ while index < len(questions):
     if choice.lower() == question["correct_ans"]:
         print("Correct Answer!")
         total_score += question["points"]
-        print(f"Earned Points: {total_score}$")
+        print(f"Total Earned Points: {total_score}$")
 
     else:
         print("Wrong Answer!")
