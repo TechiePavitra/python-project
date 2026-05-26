@@ -34,3 +34,16 @@ completed_models = []
 
 print_models(unprinted_designs, completed_models)
 show_completed_models(completed_models)
+
+# to make unprinted_designs list untouched you can call like this
+print_models(unprinted_designs[:], completed_models)
+show_completed_models(completed_models)
+# here we are using a copied list instead of using same list,
+# by using this it'll won't affect on the original list and keep it
+
+# Even though you can preserve the contents of a list by passing a copy of it to your functions, 
+# you should pass the original list to functions unless you have a specific reason to pass a copy.
+# It’s more efficient for a function to work with an existing list, 
+# because this avoids using the time and memory needed to make a separate copy. 
+# This is especially true when working with zx
+# large lists.
