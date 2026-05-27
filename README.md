@@ -15,6 +15,7 @@ This is just for me  not a tutorial, not a course, just my own notes in my own s
 - **Python Official Documentation**
 - **Python Discord Server** for Specific Help
 - **Jupyter Notebooks** for Self Explaination
+- **Check.io** website for practice
 
 ## AI, ML and LLM
 - **AI Engineering:** Building Applications with Foundation Models 1st Global Edition
