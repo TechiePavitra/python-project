@@ -12,3 +12,5 @@ def make_pizza(*toppings):
         
 make_pizza("extra cheese", "pepproni")
 make_pizza("extra cheese")
+
+# This syntax works no matter how many arguments the function receives.
