@@ -1,6 +1,6 @@
-import build_question
+from question_generator import build_question
 
-# Added questions
+# Added questions / fixed syntax error causing crash
 questions = []
 questions.append(build_question("what is the capital of australia?", ["sydney", "melbourne", "canberra", "perth"], "c", 1_000))
 questions.append(build_question("what is the capital of india?", ["kolkata", "mumbai", "new delhi", "surat"], "c", 2_000))
@@ -11,7 +11,7 @@ questions.append(build_question("what is the chemical symbol for gold?", ["ag", 
 questions.append(build_question("how many continents are there on earth?", ["5", "6", "7", "8"], "c", 40_000))
 questions.append(build_question("which animal is known as the king of the jungle?", ["tiger", "elephant", "lion", "leopard"], "c", 80_000))
 questions.append(build_question("which gas do plants absorb from the atmosphere?", ["oxygen", "nitrogen", "carbon dioxide", "hydrogen"], "c", 160_000))
-questions.append(build_question("who was the first person to walk on the moon?", ["yuri gagarin", "buzz aldrin", "michael collins", "neil armstrong"], "d", 500_000))    
+questions.append(build_question("who was the first person to walk on the moon?", ["yuri gagarin", "buzz aldrin", "michael collins", "neil armstrong"], "d", 500_000))
     
 # Score Tracking
 total_score = 0
