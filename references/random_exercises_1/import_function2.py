@@ -20,5 +20,3 @@ make_pizza(12, "extra cheese", "pepproni")
 from pizza import make_pizza
 make_pizza(12, "extra cheese", "pepproni")
 # because the module have only one function
-
- 
