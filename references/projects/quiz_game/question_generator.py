@@ -1,4 +1,3 @@
-# Database function
 def build_question(question, options, correct_answer, points):
     """Creates a new question"""
     question = {
@@ -8,3 +7,8 @@ def build_question(question, options, correct_answer, points):
         "points": points,
     }
     return question
+
+# Creates a New Question in Dictionary,
+# You need to store this dictionary in a list,
+# This function requires Question, all the options, correct answer,
+# and lastly points given to player.
