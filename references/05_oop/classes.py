@@ -23,6 +23,10 @@ class Dog:
 # every dog can bark, which is design, and this design is called a class,
 # Classes are very great for making a maintainable systems and programs,
 # Classes saves time and effort in programming,
+# Notice that Dog is capitalized, because capitalized names refer to classes in Python
+# A function that is part of class is called "Method",
+# A method is simply a function that belongs to a class/object.
+# Most function concepts still apply to methods.
 
 # What __init__ or initializer (or constructor of classes) does?
 # __init__ is like a form which collects data, very specific data,
@@ -38,8 +42,16 @@ class Dog:
 # Class and Objects make Python code more Reusable, Maintainable and flexible.
 
 # What is self?
+# Self means current object in class,
 # Imagine you have three dogs: Rocky, Harry, Bruno and you command dog to sit!
 # which dog will going to sit?: rocky? harry? or bruno?
 # How python will understand, whom we are talking about?
 # When we are working on Rocky, the self means self = Rocky or, when we're working on Harry, self = Harry
 # In simple words, self = this_dog  
+
+# Confusing Syntax explaination
+# self.name = name
+# here the self is attached with name using a dot,
+# self is a object and name is a attribute because it is attached using dot, it can be a method,
+# but method has parentheses ()
+# attribute means our data, that is specific
