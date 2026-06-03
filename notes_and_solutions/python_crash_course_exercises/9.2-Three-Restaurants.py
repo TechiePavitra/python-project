@@ -33,5 +33,5 @@ pizza_king.describe_restaurant()
 print() # added empty print for perfect output.
 
 # 3rd Instance / Object
-tasty_restaurant = Restaurant("Tasty Restaurant", "French Foods.")
+tasty_restaurant = Restaurant("Tasty Restaurant", "French Foods")
 tasty_restaurant.describe_restaurant()
