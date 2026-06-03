@@ -1,10 +1,13 @@
 class Dog:
+    
+    # Attributes / Specific Data
     """A Simple attempt to model a dog."""
     def __init__(self, name, age):
         """Initialize name and age attributes."""
         self.name = name
         self.age = age
-
+    
+    # Methods / Common data among class
     def sit(self):
         """Simulate a dog sitting in response to a command."""
         print(f"{self.name} is now sitting.")
