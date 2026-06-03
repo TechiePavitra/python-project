@@ -55,3 +55,12 @@ class Dog:
 # self is a object and name is a attribute because it is attached using dot, it can be a method,
 # but method has parentheses ()
 # attribute means our data, that is specific
+
+# same and alternative names
+# objects and instances are alternative words of each other
+# instance and object
+
+# Making an Instance of class
+my_dog = Dog("harry", 6)
+print(f"My dog's name is {my_dog.name}.")
+print(f"My dog is {my_dog.age} years old.")
