@@ -37,7 +37,6 @@ user_01 = User("Michael", "Jackson", "United States", "michaeljackson@outlook.co
 user_02 = User("Pranav", "Patel", "India", "pranavpatel1994@gmail.com")
 user_03 = User("Sumit", "Khant", "India", "sumitkhant2008@hotmail.com")
 
-
 # Calling Method
 user_01.describe_user()
 user_02.greet_user()
