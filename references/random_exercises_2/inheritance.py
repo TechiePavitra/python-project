@@ -32,6 +32,10 @@ class Car:
             self.odometer += miles
         else: 
             print("Please increment miles in positive value, distance can't be negative!")
+    
+    def fill_gas_tank(self):
+        """Fills the gas tank of the car."""
+        print("The gas tank is filling!")
             
 # Child
 class ElectricCar(Car):
@@ -49,7 +53,13 @@ class ElectricCar(Car):
     # Methods    
     def describe_battery(self):
         print(f"This car has {self.battery_size}--kwh battery.")
+    
+    def fill_gas_tank(self):
+        print("This car doesn't have a gas tank!") # override example!
             
-
+# Instances
 car = ElectricCar("Tesla", "Model 3", 2024)
+
+# calling methods
 car.describe_battery()
+car.fill_gas_tank()
