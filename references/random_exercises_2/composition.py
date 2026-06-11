@@ -48,7 +48,11 @@ class Battery:
     # Methods
     def describe_battery(self):
         print(f"This car has {self.battery_size}-kwh battery.")
-
+    
+    def get_range(self):
+        """Tell how many miles the car can travel on a full charge."""
+        range = self.battery_size * 4
+        print(f"This car can go about {range} miles on")
             
 # Child
 class ElectricCar(Car):
