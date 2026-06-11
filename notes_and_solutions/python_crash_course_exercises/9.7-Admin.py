@@ -49,5 +49,5 @@ class Admin(User):
             print(f" - {privilege}")
 
 # Instances            
-owner = Admin("Sumit", "Khant", "India", "khantsumit78@gmail.com")
+owner = Admin("Michael", "Jackson", "America", "michaeljackson92@outlook.com")
 owner.show_privileges()
