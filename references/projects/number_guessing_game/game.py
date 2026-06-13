@@ -37,8 +37,8 @@ try:
                     print(f"{direction} than {number}")
             else:
                 print(f"\nYou won in {attempts} attempt(s)!")
+                active = False
         except:
             print("Please enter a valid number!")
-    active = False
 except:
     print("Please enter a valid number!")
