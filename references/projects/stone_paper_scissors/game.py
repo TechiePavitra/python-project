@@ -24,12 +24,15 @@ while attempts < 10 and flag:
             "stone": "scissors",
         }
 
-        if bot_choice == winning_rules[user_choice]:
-            print(f"The computer selected {bot_choice.title()}. Congratulations, you won!")
-            score += 1000
-        else:
-            print(f"The computer selected {bot_choice.title()}. Unfortunately, you lost!")
-            flag = False  
+        try:
+            if bot_choice == winning_rules[user_choice]:
+                print(f"The computer selected {bot_choice.title()}. Congratulations, you won!")
+                score += 1000
+            else:
+                print(f"The computer selected {bot_choice.title()}. Unfortunately, you lost!")
+                flag = False
+        except:
+            print("Please Enter a Valid choice!")  
     attempts += 1
 
 print(f"Your total score is: ${score}")
