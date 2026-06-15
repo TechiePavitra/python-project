@@ -1,11 +1,11 @@
 # To-do list Application
-# v0.2 Pre-Alpha CLI Version
+# v0.3 Pre-Alpha CLI Version
 tasks = []
 flag = True
 
 def show_options():
     """Shows option on screen"""
-    print("\n--- To-do List App v0.2 ---")
+    print("\n--- To-do List App v0.3 ---")
     print("Options:")
     print("1. Add Task")
     print("2. View Tasks")
@@ -26,14 +26,18 @@ def add_task():
 
 def view_task():
     """View Tasks"""
-    print("\nTask List:  ")
-    for index, task in enumerate(tasks, start=1):
-        status = "[X]" if task["completed"] else "[ ]"
-        print(f"{index}. {task['task']} {status}")
+    if not tasks:
+        print("\nNo Tasks found.")
+        return
+    else:    
+        print("\nTask List:  ")
+        for index, task in enumerate(tasks, start=1):
+            status = "[X]" if task["completed"] else "[ ]"
+            print(f"{index}. {task['task']} {status}")
 
 
 def complete_task():
-    """Mark a Task a Completed."""
+    """Mark a task as completed."""
     if tasks:
         view_task()
         user_choice = input("Enter the task number:  ")
