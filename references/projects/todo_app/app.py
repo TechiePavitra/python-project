@@ -36,11 +36,11 @@ def complete_task():
     """Mark a Task a Completed."""
     if tasks:
         view_task()
-        user_choice = input("Enter the task number::  ")
+        user_choice = input("Enter the task number:  ")
         try:
             user_choice = int(user_choice)
             tasks[user_choice-1]["completed"] = True
-            print(f"Task: {tasks[user_choice-1]['task']} marked as completed [X].")
+            print(f"Task '{tasks[user_choice-1]['task']}' marked as completed [X].")
         except:
             print("Please enter a valid choice.")    
     else:
@@ -54,7 +54,7 @@ def delete_task():
         user_choice = input("Enter the task number::  ")
         try:
             user_choice = int(user_choice)
-            print(f"Task: {tasks[user_choice-1]['task']} deleted successfully!")
+            print(f"Task '{tasks[user_choice-1]['task']}' deleted successfully!")
             del tasks[user_choice-1]
         except:
             print("Please enter a valid choice.")    
