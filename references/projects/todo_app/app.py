@@ -1,11 +1,11 @@
 # To-do list Application
-# v0.1 Pre-Alpha CLI Version
+# v0.2 Pre-Alpha CLI Version
 tasks = []
 flag = True
 
 def show_options():
     """Shows option on screen"""
-    print("\n--- To-do List App v0.1 ---")
+    print("\n--- To-do List App v0.2 ---")
     print("Options:")
     print("1. Add Task")
     print("2. View Tasks")
@@ -16,14 +16,17 @@ def show_options():
 
 def add_task():
     """Adds Task in tasks list"""
-    task = input("Please Enter Your Task: ")
-    tasks.append({"task": task, "completed":False})
-    print(f"Task: {task} added!")
+    task = input("Enter a Task: ").strip()
+    if task:
+        tasks.append({"task": task, "completed":False})
+        print(f"Task '{task}' added successfully!")
+    else:
+        print("Please enter a valid task!")
 
 
 def view_task():
     """View Tasks"""
-    print("\nHere is List of Tasks:  ")
+    print("\nTask List:  ")
     for index, task in enumerate(tasks, start=1):
         status = "[X]" if task["completed"] else "[ ]"
         print(f"{index}. {task['task']} {status}")
@@ -33,35 +36,36 @@ def complete_task():
     """Mark a Task a Completed."""
     if tasks:
         view_task()
-        user_choice = input("Please Enter Your Task Number:  ")
+        user_choice = input("Enter the task number::  ")
         try:
             user_choice = int(user_choice)
             tasks[user_choice-1]["completed"] = True
-            print(f"Task: {tasks[user_choice-1]['task']} marked as Completed [X]")
+            print(f"Task: {tasks[user_choice-1]['task']} marked as completed [X].")
         except:
-            print("Please Enter a Valid choice!")
+            print("Please enter a valid choice.")    
     else:
-        print("Please add task to mark as complete!")
+        print("There are no tasks to mark as completed.")
 
 
 def delete_task():
     """Delete a Task."""
     if tasks:
         view_task()
-        user_choice = input("Please Enter Your Task Number:  ")
+        user_choice = input("Enter the task number::  ")
         try:
             user_choice = int(user_choice)
-            print(f"Task: {tasks[user_choice-1]['task']} successfully deleted!")
+            print(f"Task: {tasks[user_choice-1]['task']} deleted successfully!")
             del tasks[user_choice-1]
         except:
-            print("Please Enter a Valid choice!")
+            print("Please enter a valid choice.")    
     else:
-        print("There is no task to remove it!")
-    
+        print("There are no tasks to delete.")    
+
+        
 # Logic
 while flag:
     show_options()
-    user_choice = input("Enter Your choice:  ")
+    user_choice = input("Enter your choice:  ")
     try:
         user_choice = int(user_choice)
         if user_choice in range(1,6):
@@ -76,6 +80,6 @@ while flag:
             elif user_choice == 5:
                 flag = False
         else:
-            print("Please Enter a Valid choice!")       
+            print("Please enter a valid choice.")         
     except:
-        print("Please Enter a Valid choice!")
+        print("Please enter a valid choice.")  
