@@ -1,6 +1,13 @@
 # Import modules
 from modules.car import Car, ElectricCar
 
+# Importing all classes from a module
+# from module_name import *
+
+# Importing all classes from a module method is generally not recommanded,
+# because it creates name conflicts, not easy to read in production ready programs,
+# Here is a simple rule: a clear (in clarity) long code is bettter than short 
+
 # Base Car
 my_new_car = Car("audi", "a4", 2024) # Creating an Instance
 print(my_new_car.get_descriptive_name()) # Getting descriptive Name
