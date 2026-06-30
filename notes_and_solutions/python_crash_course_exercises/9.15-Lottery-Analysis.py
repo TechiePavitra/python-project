@@ -9,10 +9,10 @@ lottery_numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'A', 'B', 'C', 'D', 'E')
 my_ticket = [1, 2, 'A', 'D']
 
 winning_ticket = []
-count = 0
+count = 0 # This variable will keep track of how many times the loop runs before winning.
 
 while winning_ticket != my_ticket:
-    winning_ticket = []      
+    winning_ticket = [] # this resets the winning_ticket list for each iteration of the loop
     
     index = 1
     while index <= 4:
